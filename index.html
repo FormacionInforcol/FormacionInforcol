@@ -1,0 +1,3304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon"
+        href="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/THINFO.png">
+    <title>Inforcol Formacion</title>
+
+    <style>
+       body {
+            min-width: 100%;
+            max-width: 100%;           
+            height: 100%;
+            width: 100%;
+            margin: 0%;
+        }
+
+        .slide-0 {
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fondo_Mesa%20de%20trabajo%201.jpg");
+            background-size: 110%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		.slide-3 {
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fondo%20oficina%203.jpg");
+            background-size: 110%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		.slide-5 {
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fondo%20oficina%20tablero%20peque%C3%B1o_Mesa%20de%20trabajo%201.jpg");
+            background-size: 110%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		.slide-4, .slide-8 {
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fondo%20oficina%202_Mesa%20de%20trabajo%201.jpg");
+            background-size: 110%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		.slide-6 {
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fondo%20casa%20LL.jpg");
+            background-size: 110%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		.slide-7 , .slide-11 {
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/calle1.2_Mesa%20de%20trabajo%201.jpg");
+            background-size: 110%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		.slide-10, .slide-15 {
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fondo%20activ_Mesa%20de%20trabajo%201.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		.slide-12, .slide-13{
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fondo%20carretera_Mesa%20de%20trabajo%201.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		.slide-14{
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/pintura%20en%20llamas%20fondo2.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		
+		
+		 .slide-16	{
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fondo%20cuerda%20floja_Mesa%20de%20trabajo%201.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+        }
+		
+		
+        .slide-1, .slide-2, .slide-9, .slide-18, .slide-19{
+            background-image: url("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fondo%202.jpg");
+            background-size: 101%;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 100%;
+            position: absolute;
+        }
+
+        .siguiente {
+            position: absolute;
+            top: 850px;
+            bottom: 20px;
+            left: 1000px;
+            right: 80px;
+            height: 60px;
+            width: 60px;           
+        }
+
+        .anterior {
+            position: absolute;
+            top: 850px;
+            bottom: 0px;
+            left: 692px;
+            right: 28px;
+            height: 60px;
+            width: 60px;
+        }
+
+        .inicio {
+            position: absolute;
+            top: 850px;
+            bottom: 20px;
+            left: 800px;
+            right: 29px;
+            width: 160px;
+            height: 62px;
+        }
+
+        #tituloPag1 {
+            position: relative;
+            width: 1050px;
+            height: 0px;
+            top: 30px;
+            bottom: 42px;
+            left: 500px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		#tituloPag2 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 30px;
+            bottom: 42px;
+            left: 745px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#tituloPag3 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 60px;
+            bottom: 42px;
+            left: 800px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#tituloPag4 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 60px;
+            bottom: 42px;
+            left: 625px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#tituloPag5 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 60px;
+            bottom: 42px;
+            left: 845px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#tituloPag6 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 30px;
+            bottom: 42px;
+            left: 730px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #FFFFFF;
+            margin: 0;
+        }
+		
+		#tituloPag7 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 60px;
+            bottom: 42px;
+            left: 760px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#tituloPag8 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 60px;
+            bottom: 42px;
+            left: 650px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#tituloPag9 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 30px;
+            bottom: 42px;
+            left: 795px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#tituloPag10 {
+			background-color: #FFFFFF;
+            position: absolute;
+            width: 400px;
+            height: 0px;
+            top: 30px;
+            bottom: 42px;
+            left: 786px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            ;
+        }
+		
+		#tituloPag11 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 60px;
+            bottom: 42px;
+            left: 760px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		.tituloPag12 {
+            position: relative;
+            width: 1015px;
+            height: 0px;
+            top: 60px;
+            bottom: 42px;
+            left:770px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#tituloPag14 {
+            position: relative;
+            width: 912px;
+            height: 0px;
+            top: 48px;
+            bottom: 42px;
+            left: 700px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#tituloPag15 {
+            background-color: #FFFFFF;
+            position: absolute;
+            width: 400px;
+            height: 0px;
+            top: 30px;
+            bottom: 42px;
+            left: 786px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            
+        }
+		
+		#tituloPag16 {
+            position: absolute;
+            width: 790px;
+            height: 125px;
+            top: 30px;
+            bottom: 42px;
+            left: 550px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            margin: 0;
+			background-color: white;
+			text-align: center;
+        }
+		
+		#tituloPag17 {
+            background-color: white;
+            position: absolute;
+            width: 660px;
+            height: 55px;
+            top: 30px;
+            bottom: 42px;
+            left: 600px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            
+        }
+		
+		#subtituloej {
+            position: absolute;
+            width: 1015px;
+            height: 0px;
+            top: 75px;
+            bottom: 42px;
+            left: 120px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 40px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#subtituloej2 {
+            position: absolute;
+            width: 1015px;
+            height: 0px;
+            top: 340px;
+            bottom: 42px;
+            left: 120px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 40px;
+            color: #1f2a50;
+            margin: 0;
+        }
+		
+		#subtituloej3 {
+            position: absolute;
+            width: 1015px;
+            height: 0px;
+            top: 605px;
+            bottom: 42px;
+            left: 120px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 40px;
+            color: #1f2a50;
+            margin: 0;
+        }
+
+
+        #subTextopag1 {
+            font-family: 'Raleway', sans-serif;
+            color: #1f2a50;
+            margin: 0px;
+            width: 1360px;
+            float: left;
+            text-align: center;
+            font-size: 29px;
+            position: absolute;
+            top: 145px;
+            bottom: 31px;
+            left: 265px;
+            right: 58px;
+        }
+		
+		#subTextopag5 {
+            position: relative;
+            width: 800px;
+            height: 0px;
+            top: 170px;
+            bottom: 42px;
+            left: 100px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 28px;
+            color: #1f2a50;
+            margin: 0;
+			text-align: justify
+        }
+		
+		#subTextopag6 {
+            position: relative;
+            width: 625px;
+            height: 0px;
+            top: 175px;
+            bottom: 42px;
+            left: 200px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 28px;
+            color: #1f2a50;
+            margin: 0;
+			text-align: justify
+        }
+		
+		#subTextopagprobable {
+            position: relative;
+            width: 800px;
+            height: 0px;
+            top: 170px;
+            bottom: 42px;
+            left: 100px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 28px;
+            color: #1f2a50;
+            margin: 0;
+			text-align: justify
+        }
+
+        #robot {
+            position: absolute;
+            width: 1115px;
+            height: 700px;
+            top: 199px;
+            bottom: 7px;
+            left: -303px;
+            right: -152px;
+            padding: 10px;
+        } 
+		
+		#Animacion2 {
+            position: absolute;
+            width: 1280px;
+            height: 742px;
+            top: 100px;
+            bottom: 7px;
+            left: 358px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		.Animacion {
+            position: absolute;
+            width: 668px;
+            height: 793px;
+            top: 80px;
+            bottom: 7px;
+            left: 1105px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Animacion5 {
+            position: absolute;
+            width: 647px;
+            height: 770px;
+            top: 80px;
+            bottom: 7px;
+            left: 525px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		
+		
+		
+		#Animacion3 {
+            position: absolute;
+            width: 540px;
+            height: 750px;
+            top: 130px;
+            bottom: 7px;
+            left: 1105px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		.Animacion6 {
+            position: absolute;
+            width: 468px;
+            height: 593px;
+            top: 256px;
+            bottom: 7px;
+            left: 647px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Animacion7 {
+            position: absolute;
+            width: 564px;
+            height: 593px;
+            top: 256px;
+            bottom: 7px;
+            left: 610px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Animac {
+            position: absolute;
+            width: 360px;
+            height: 510px;
+            top: 340px;
+            bottom: 7px;
+            left: 1105px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Animac2 {
+            position: absolute;
+            width: 375px;
+            height: 510px;
+            top: 330px;
+            bottom: 7px;
+            left: 1105px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Animacion4 {
+            position: absolute;
+            width: 492px;
+            height: 693px;
+            top: 200px;
+            bottom: 7px;
+            left: 1105px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Animacion8 {
+            position: absolute;
+            width: 492px;
+            height: 693px;
+            top: 200px;
+            bottom: 7px;
+            left: 1105px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Autov {
+            position: absolute;
+            width: 492px;
+            height: 440px;
+            top: 200px;
+            bottom: 7px;
+            left: 80px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Estrellada {
+            position: absolute;
+            width: 855px;
+            height: 488px;
+            top: 13px;
+            bottom: 7px;
+            left: 870px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Enllamas {
+            position: absolute;
+            width: 455px;
+            height: 288px;
+            top: 443px;
+            bottom: 7px;
+            left: 1154px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		
+		#Senalando {
+            position: absolute;
+            width: 560px;
+            height: 750px;
+            top: 80px;
+            bottom: 7px;
+            left: 620px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Cuadro {
+    		position: absolute;
+    		width: 650px;
+    		height: 650px;
+    		top: 140px;
+    		bottom: 7px;
+    		left: 80px;
+    		right: -152px;
+    		padding: 0px;
+		}
+
+        #tablero {
+            position: relative;
+            width: 1060px;
+            height: 550px;
+            top: 250px;
+            bottom: 42px;
+            left: 525px;
+            right: 0px;
+        }
+
+        .inicioImg {
+			
+			position: absolute;
+            width: 160px;
+            height: 60px;
+			z-index: 2;
+			
+        }
+
+        .siguienteImg{
+			
+			position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 500%;
+			z-index: 2;
+           
+            
+        }
+
+        .anteriorImg {
+			
+			position: absolute;
+            width: 60px;
+            height: 60px;
+			z-index: 2;
+			
+           
+        }
+		
+		#Hombre {
+            position: absolute;
+            width: 638px;
+            height: 728px;
+            top: 130px;
+            bottom: 67px;
+            left: 67px;
+            right: -152px;
+            padding: 0px;
+        } 
+		
+		#Moto {
+            position: absolute;
+            width: 1012px;
+            height: 260px;
+            top: 490px;
+            bottom: 67px;
+            left: 67px;
+            right: -152px;
+            padding: 0px;
+        } 
+		
+		#autorojo {
+            position: absolute;
+            width: 881px;
+            height: 201px;
+            top: 540px;
+            bottom: 67px;
+            left: 0px;
+            right: -152px;
+            padding: 0px;
+        } 
+		
+		#autoazul {
+            position: absolute;
+            width: 881px;
+            height: 201px;
+            top: 540px;
+            bottom: 67px;
+            left: 634px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#estrellar{
+            position: absolute;
+            width: 503px;
+            height: 445px;
+            top: 418px;
+            bottom: 67px;
+            left: 550px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#accidente2 {
+            position: absolute;
+            width: 370px;
+            height: 270px;
+            top: 625px;
+            bottom: 67px;
+            left: 120px;
+            right: -152px;
+            padding: 0px;
+        } 
+		
+		#accidente3 {
+            position: absolute;
+            width: 670px;
+            height: 570px;
+            top: 90px;
+            bottom: 67px;
+            left: 970px;
+            right: -152px;
+            padding: 0px;
+        } 
+		
+		#casa {
+            position: absolute;
+            width: 950px;
+            height: 825px;
+            top: -50px;
+            bottom: 67px;
+            left: 770px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		
+		#casa2 {
+            position: absolute;
+            width: 290px;
+            height: 270px;
+            top: 120px;
+            bottom: 67px;
+            left: 120px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#casa3 {
+            position: absolute;
+            width: 290px;
+            height: 270px;
+            top: 120px;
+            bottom: 67px;
+            left: 120px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#ansiedad {
+            position: absolute;
+            width: 670px;
+            height: 448px;
+            top: 165px;
+            bottom: 67px;
+            left: 185px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#muerteries {
+            position: absolute;
+            width: 315px;
+            height: 198px;
+            top: 395px;
+            bottom: 67px;
+            left: 120px;
+            right: -152px;
+            padding: 0px;
+        } 
+		
+		#marco {
+            position: absolute;
+            width: 656px;
+            height: 448px;
+            top: 170px;
+            bottom: 67px;
+            left: 195px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+
+		#anima {
+            position: absolute;
+            width: 656px;
+            height: 667px;
+            top: 162px;
+            bottom: 67px;
+            left: 25px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+        #mensaje1 {
+            margin: 3px;
+            width: 890px;
+            float: left;
+            text-align: center;
+            font-size: 30px;
+            position: absolute;
+            top: 300px;
+            bottom: 20px;
+            left: 665px;
+            right: 20px;
+        }
+
+        #mensaje2 {
+            margin: 3px;
+            width: 890px;
+            float: left;
+            text-align: center;
+            font-size: 30px;
+            position: absolute;
+            top: 450px;
+            bottom: 20px;
+            left: 654px;
+            right: 20px;
+        }
+
+        #mensaje3 {
+            margin: 3px;
+            width: 935px;
+            float: left;
+            text-align: center;
+            font-size: 30px;
+            position: absolute;
+            top: 600px;
+            bottom: 20px;
+            left: 600px;
+            right: 20px;
+        }
+
+        #riesgo {
+            position: fixed;
+            top: 225px;
+            left: 125px;
+            right: 1200px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            transition: opacity 0.3s;
+        }
+
+        #actiRiesgo {
+            position: fixed;
+            top: 500px;
+            left: 125px;
+            right: 1300px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+        }
+
+        #siniestro {
+            position: fixed;
+            top: 225px;
+            left: 1330px;
+            right: 900px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+        }
+
+        #clasificacionSeguros {
+            position: fixed;
+            top: 500px;
+            left: 1330px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+        }
+
+        #imagenMuestra {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            left: -90px;
+			right:42px; 
+            top: 20px;
+        }
+
+        #siguienteIMuestra {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            left: -90px;
+            top: 20px;
+        }
+
+        .InicioIMuestra {
+            position: relative;
+            width: 125px;
+            height: 45px;
+            left: -30px;
+            top: 25px;
+        }
+		
+		 #Boton1 {
+            position: absolute;
+            width: 100px;
+            height: 75px;
+            left: 21px;
+            top: 213px;
+        }
+		
+		#Boton2 {
+            position: absolute;
+            width: 100px;
+            height: 75px;
+            left: 1220px;
+            top: 213px;
+        }
+		#Boton3 {
+            position: absolute;
+            width: 100px;
+            height: 75px;
+            left: 21px;
+            top: 490px;
+        }
+		#Boton4 {
+            position: absolute;
+            width: 100px;
+            height: 75px;
+            left: 1220px;
+            top: 490px;
+        }
+		
+		#cuadro1 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 80px;
+            top: 136px;
+        }
+		
+		#cuadro2 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 431px;
+            top: 136px;
+        }
+		
+		#cuadro3 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 80px;
+            top: 493px;
+        }
+		
+		#cuadro4 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            left: 431px;
+            top: 493px;
+        }
+		
+		#Circulocentro {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            left: 273px;
+            top: 326px;
+        }
+		
+		
+
+        @media screen and (max-width:480px){
+            
+        }
+		
+		.Gif {
+            position: relative;
+            width: 500px; /* Ajusta el ancho según tus necesidades */
+        }		
+		#Espejo {
+            position: absolute;
+            top: 280px;
+			left: 100px;
+            transform: scaleX(-1);
+			width: 303px;
+			height: 400px;
+        }
+		
+		#Espejo2 {
+            position: absolute;
+            top: 280px;
+			left: 100px;
+            transform: scaleX(-1);
+			width: 303px;
+			height: 400px;
+        }
+		
+		#Actitudes {
+            position: absolute;
+            width: 540px;
+            height: 550px;
+            top: 195px;
+            bottom: 7px;
+            left: 1275px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Autodes {
+            position: absolute;
+            width: 400px;
+            height: 250px;
+            top: 185px;
+            bottom: 7px;
+            left: 150px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#Noauto {
+            position: absolute;
+            width: 400px;
+            height: 250px;
+            top: 195px;
+            bottom: 7px;
+            left: 1250px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#billetes {
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            top: 495px;
+            bottom: 7px;
+            left: 100px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#fabrica {
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            top: 495px;
+            bottom: 7px;
+            left: 1225px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#titulofinal {
+            background-color: #FFFFFF;
+            position: absolute;
+            width: 900px;
+            height: 100px;
+            top: 270px;
+            bottom: 42px;
+            left: 500px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 90px;
+			font-weight: 900;
+            color: #1f2a50;
+			text-align: center;
+            
+        }
+		
+		#cabezarobot {
+            position: absolute;
+            width: 559px;
+            height: 559px;
+            top: 179px;
+            bottom: 7px;
+            left: 614px;
+            right: -152px;
+            padding: 0px;
+        }
+		
+		#quiz {
+            position: fixed;
+            top: 415px;
+            left: 647px;
+            right: 1200px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            transition: opacity 0.3s;
+        }
+	
+		#actividad{
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			
+		}
+		
+		#actividad2{
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			
+		}
+		
+		#actividad3{
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			
+		}
+		
+		#textoconcreto {
+            background-color: white;
+            position: absolute;
+            width: 325px;
+            height: 55px;
+            top: 247px;
+            bottom: 42px;
+            left: 695px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            
+        }
+		
+		#textoconcreto2 {
+            background-color: white;
+            position: absolute;
+            width: 277px;
+            height: 55px;
+            top: 362px;
+            bottom: 42px;
+            left: 695px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            
+        }
+		
+		#textoconcreto3 {
+            background-color: white;
+            position: absolute;
+            width: 308px;
+            height: 55px;
+            top: 483px;
+            bottom: 42px;
+            left: 695px;
+            right: 0px;
+            font-style: normal;
+            font-family: 'Raleway', sans-serif;
+            font-size: 52px;
+            color: #1f2a50;
+            
+        }
+		
+		
+		
+		#container {
+ 			 position: relative; /* Permite posicionar el cuadro interno */
+ 			 width: 100%; /* Ancho del contenedor */
+			 height: 100vh; /* Altura del contenedor */
+ 			 overflow: hidden; /* Oculta el desbordamiento */
+		}
+
+		#box {
+  			 position: absolute; /* Posicionamiento absoluto */
+ 			 top: -300px; /* Posición inicial fuera de la pantalla */
+ 			 left: 400px; /* Centrar horizontalmente */
+  			 transform: translateX(-300px); /* Centrar horizontalmente */
+  			 width: 578px; /* Ancho del recuadro */
+  			 height: 395px; /* Altura del recuadro */
+  			 background-color: white; /* Color de fondo blanco */
+  			 animation: slide 3s linear; /* Animación para desplazar */
+			 font-style: normal;
+             font-family: 'Raleway', sans-serif;
+             font-size: 28px;
+             color: #1f2a50;
+			 text-align: justify
+			 }
+		#box p{
+			
+			margin: 35px;
+			
+		}
+
+		@keyframes slide {
+  				0% {
+    			top: -200px;
+  						}
+  				100% {
+   				 top: calc(180px - 100px); /* Punto de destino en el centro de la pantalla */
+  					}
+ 			 }
+		
+		
+		#container2 {
+ 			 position: relative; /* Permite posicionar el cuadro interno */
+ 			 width: 100%; /* Ancho del contenedor */
+			 height: 100vh; /* Altura del contenedor */
+ 			 overflow: hidden; /* Oculta el desbordamiento */
+		}
+
+		#box2 {
+  			 position: absolute; /* Posicionamiento absoluto */
+ 			 top: -300px; /* Posición inicial fuera de la pantalla */
+ 			 left: 400px; /* Centrar horizontalmente */
+  			 transform: translateX(-300px); /* Centrar horizontalmente */
+  			 width: 578px; /* Ancho del recuadro */
+  			 height: 255px; /* Altura del recuadro */
+  			 background-color: white; /* Color de fondo blanco */
+  			 animation: slide 3s linear; /* Animación para desplazar */
+			 font-style: normal;
+             font-family: 'Raleway', sans-serif;
+             font-size: 28px;
+             color: #1f2a50;
+			 text-align: justify
+			 }
+		#box2 p{
+			
+			margin: 35px;
+			
+		}
+
+		@keyframes slide {
+  				0% {
+    			top: -200px;
+  						}
+  				100% {
+   				 top: calc(250px - 100px); /* Punto de destino en el centro de la pantalla */
+  					}
+ 			 }
+		
+		
+		
+    </style>
+</head>
+
+<body>
+	
+    <div class="slide-0" style="">
+
+        <a type="button" value="siguiente" class="siguiente" onclick="siguiente()"><img alt="imagen boton siguiente" class="siguienteImg" 
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <div class="slide-1">
+        <h1 id="tituloPag1"> CONCEPTOS BÁSICOS DE SEGUROS </h1>
+        <p id="subTextopag1"> Bienvenidos a tu módulo de introducción al seguro, antes de iniciar queremos mostrarte
+            como se va a manejar la navegación en el recorrido de nuestro curso. (Darle click al robot!!)
+        </p>
+        <div>
+            <div id="divTablero"><img alt="imagen tablero" id="tablero"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Tablero%20V.png">
+                <div hidden id="mensaje1">  <img alt="imagen boton anterior" id="imagenMuestra"
+                        src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png">
+                    Cuando quieras dar un paso atras para retomar alguna lección da click en este botón. </div>
+
+                <div hidden id="mensaje2"><img id="siguienteIMuestra" alt=""
+                        src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png">
+                    Cuando quieras avanzar en tu lección. dale click en este botón. </div>
+
+                <div hidden id="mensaje3"><img class="InicioIMuestra"  alt=""
+                        src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png">
+                    Cuando quieras regresar a la tabla de contenido da click en este botón. </div>
+            </div>
+            <a hidden value="siguiente" id="siguieteid" class="siguiente" onclick="siguiente()"><img  alt="" class="siguienteImg"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+			
+            <a id="btn"><img alt="" id="robot"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/mascota-con-boton.gif"></a>
+
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-2">
+		<h1 id="tituloPag2"> CONTENIDO </h1>
+
+		 <div> <img alt="" id="Boton1"
+                        src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Boton%20menu.png">
+	</div>
+		<div> <img alt="" id="Boton2"
+                        src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Boton%20menu.png">
+	</div>
+		<div> <img alt="" id="Boton3"
+                        src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Boton%20menu.png">
+	</div>
+		<div> <img alt="" id="Boton4"
+                        src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Boton%20menu.png">
+	</div>
+        <a id="riesgo" href="#" onclick="ocultarTodo();  mostrarUno(3); playMusica(); gif1();gif2();gif3();texto();">Riesgo </a>
+        <a id="actiRiesgo" href="#" onclick="ocultarTodo();  mostrarUno(5); pararycontinuar2()">Al azar </a>
+        <a id="siniestro" href="#" onclick="ocultarTodo();  mostrarUno(11); pararycontinuar8(); autoblue();
+			autored();estrellados()">Siniestro</a>
+        <a id="clasificacionSeguros" href="#" onclick="ocultarTodo();  mostrarUno(16); pararycontinuar13();señalando();
+			pensativo();desesperacion();activi()">Actitudes frente al riesgo</a>
+
+        <a type="button" value="inicio" class="inicio" onclick="inicio()"><img alt="" class="inicioImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        <a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones()"><img alt="" class="siguienteImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        <a type="button" value="anterior" class="anterior" onclick="anterior ()"><img alt="" class="anteriorImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+		<img alt="" id="Senalando"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Robot-se%C3%B1alando.gif">
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <div class="slide-3" >
+	
+        <h1 id="tituloPag3"> RIESGO </h1>
+		       
+        <a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        <a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones2()"><img alt="" class="siguienteImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        <a type="button" value="anterior" class="anterior" onclick="ejecutaFuncionesant()"><img alt="" class="anteriorImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+        
+		
+		<div class="div_imagen_Don_Milton">
+					
+
+            <div id="animaciodiv3" style="display: none;">
+			
+				
+                <img alt="" id="Animacion3"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Don-Milton-Saludando.gif">
+            </div>
+
+            <div id="animaciodiv2" style="display: none;">
+                <img alt="" id="Animacion2"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Caminata-6.gif">
+            </div>
+			
+					
+				<p id="subTextopag5">
+
+            Un riesgo es una probabilidad de que ocurra un evento, ese evento es al azar; no se sabe cuando podrá
+            ocurrir, ni como va a ocurrir, ni como se va a ocasionar dicho evento.
+            Es algo concreto, se puede describir y saber cual es su potencialidad pero hasta que no ocurra no lo voy a
+            poder describir, pero sin importar cuando ocurra terminara generando perdidas ya sea porque genera nuevas
+            necesidades economicas o ya sea porque tengo que cubrir daños.
+
+
+
+        </p>
+						
+            <div id="animaciodiv5">
+                <img alt="" id="Animacion5"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/charla-sin-saltito.gif">
+            </div>
+
+
+
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------------->
+    <div class="slide-4">
+		
+		<h1 id="tituloPag4"> CARACTERISTICAS DEL RIESGO </h1>
+     
+        <a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        <a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones4()"><img alt="" class="siguienteImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+		
+        <a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones3()"><img alt="" class="anteriorImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+			
+		<div id="cuadrodiv1" style="display: none;">		
+		
+			<img alt="" id="cuadro1"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Cuadro%20arriba%20izq.png">
+		</div>	
+		
+		<div id="cuadrodiv2" style="display: none;">
+			
+		
+			<img alt="" id="cuadro2"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Cuadro%20arriba%20der.png">
+		</div>	
+		
+		<div id="cuadrodiv3" style="display: none;">	
+		
+		
+			<img alt="" id="cuadro3"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Cuadro%20abajo%20izq.png">
+		</div>	
+			
+		<div id="cuadrodiv4" style="display: none;">
+		
+		
+			<img alt="" id="cuadro4"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Cuadro%20abajo%20der.png">
+		</div>		
+		
+		<img alt="" id="Circulocentro"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/circulo%20centro.png">
+		
+		<img alt="" class="Animacion"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/charla.gif">
+    </div>
+ <!---------------------------------------------------------------------------------------------------------------------------->
+	
+	<div class="slide-5">
+         
+    <h1 id="tituloPag5"> AL AZAR </h1>
+
+        <a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        <a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones6()"><img alt="" class="siguienteImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        <a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones5()"><img alt="" class="anteriorImg"
+                src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+		<img alt="" class="Animacion"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/charla.gif">
+		
+		<div id="Ansiedadgif" style="display: block;">
+		
+			<img alt="" id="ansiedad"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/respuesta-41-min.gif">
+		</div>
+		
+		<div id="Parrafodiv2" style="display: none;">
+			
+				<p id="subTextopag6">
+
+           Esta incertidumbre no sólo se determina de la forma general respecto a si ocurrirá o no, sino que en algunos casos la incertidumbre se materializa en el hecho de desconocer con exactitud cuando ocurrirá.
+
+
+        </p>
+			</div>
+		
+		
+    </div>
+ <!---------------------------------------------------------------------------------------------------------------------------->
+	<div class="slide-6">
+      	
+		<h1 id="tituloPag6"> CONCRETO </h1>
+        
+    	<a href=""></a>
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones8()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones7()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+		<div id="Dimensiones" style="display: none">
+		
+		<h1 id="textoconcreto">
+		
+		Dimensiones
+		
+		</h1>
+		
+		</div>
+	
+		<div id="Cualitativa" style="display: none">
+		
+		<h1 id="textoconcreto2">
+		
+		Cualitativa
+		
+		</h1>
+		
+		</div>
+	
+		<div id="Cuantitativa" style="display: none">
+	
+		<h1 id="textoconcreto3">
+		
+		Cuantitativa
+		
+		</h1>
+			
+		</div>	
+		
+		<img alt="" id="anima"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fuego-don-milton.gif">
+		
+		
+		<img alt="" id="casa"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Secuencia%2002_1.gif">
+		
+    	</div>
+
+  <!---------------------------------------------------------------------------------------------------------------------------->
+	<div class="slide-7">
+      
+        <h1 id="tituloPag7"> PROBABLE </h1>
+		
+    	<a href=""></a>
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones10()"><img alt="" class="siguienteImg" 
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones9()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+		<div id="container">
+  		<div id="box">
+			
+			<p>
+
+            Debe existir una probabilidad de que el riesgo se materialice, enmarcada dentro de dos extremos: la frecuencia y la imposibilidad. Si es imposible, entonces no hay riesgos. (probabilidad 0) La frecuencia demasiado alta, elimina la incertidumbre, convirtiendo el hecho en algo “casi” cierto, por lo que deja de ser un riesgo. (probabilidad 1 o casi 1)
+
+
+
+        </p>
+			
+			</div>
+		</div>
+		
+		<img alt="" id="Moto"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Mto.gif">
+		
+		<img alt="" id="Animac"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Don-Milton-Saludando.gif">
+		
+    	</div>
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-8">
+      	
+		<h1 id="tituloPag8"> NECESIDADES ECONOMICAS</h1>
+        
+    	<a href=""></a>
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones12()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones11()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+		<img alt="" id="Hombre"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/hombre%20triste.png">
+	
+	   <img alt="" class="Animacion"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/charla.gif">
+		
+    	</div>
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-9">
+      
+        <h1 id="tituloPag9"> EJEMPLOS</h1>
+		
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones14()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones13()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+		<div id="casadiv2" style="display: none;">
+			
+			<h2 id="subtituloej"> RIESGO DE INCENDIO</h2>
+		
+			<img alt="" id="casa2"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Secuencia%2002_1.gif">
+		
+		</div>
+		
+		<div id="muerteriesdiv" style="display: none;">
+			
+			<h3 id="subtituloej2"> RIESGO DE MUERTE</h3>
+			
+			<img alt="" id="muerteries"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/riesgo%20de%20muerte.gif">
+		</div>
+				
+		<div id="accidentediv2" style="display: none;">
+			
+			<h4 id="subtituloej3"> RIESGO DE ACCIDENTE DE TRÁNSITO</h4>
+			
+			<img alt="" id="accidente2"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/estrellados%20mapo.gif">
+		</div>
+		
+		
+			<img alt="" class="Animacion"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/charla-sin-saltito.gif">
+		
+		
+    	</div>
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-10">
+      
+        <h1 id="tituloPag10"> ACTIVIDAD</h1>
+		
+    	<a id="titulopag15" href="https://wordwall.net/resource/57194795"></a>
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones16()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones15()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+			<img alt="" id="Animacion4"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Don-Milton-Saludando.gif">
+		
+		<div id="actividad" style="display: none;">
+		
+	<iframe height= "925"  width= "1820" src="https://es.educaplay.com/juego/15354264-.html"></iframe>
+		
+		</div>
+		
+    	</div>	
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-11">
+      
+        <h1 id="tituloPag11"> SINIESTRO</h1>
+		
+    	<a href=""></a>
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones18()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones17()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+		<div id="container2">
+  		<div id="box2">
+			
+			<p>
+
+            El siniestro es la Materialización del riesgo y está determinado por ciertas características:
+			
+				<br>
+				-Causa 
+				<br> 
+				-Evento 
+				<br>
+				-Consecuencia
+
+
+
+        </p>
+			
+			</div>
+			
+			</div>
+		
+		<div id="autored" style="display: block;">
+		
+			<img alt="" id="autorojo"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/auto-rojo-moviendose.gif">
+		
+		</div>		
+		
+		<div id="autoblue" style="display: block;">
+		
+			<img alt="" id="autoazul"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/auto-azul-moviendose.gif">
+		
+		</div>
+		
+		<div id="estrellados" style="display: none;">
+		
+			<img alt="" id="estrellar"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Estrellados.gif">
+		
+		</div>
+		
+			
+		<img alt="" id="Animac2"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/charla-sin-saltito.gif">
+
+
+
+</div>
+
+
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-12">
+      
+        <h1 class="tituloPag12"> CAUSA</h1>
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones20()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones19()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+			<img alt="" class="Animacion6"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/charla-sin-saltito.gif">	
+		<div id="altave" style="display: none;">
+			
+			<img alt="" id="Autov"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/carro%20rojo.gif">
+		
+		</div>
+		
+		<div id="fallafre" style="display: none;">
+		
+			<img alt="" id="Estrellada"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/carro-estrellandose.gif">
+		
+		</div>
+		
+		<div id="corto" style="display: none;">
+		
+			<img alt="" id="Enllamas"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/pintura%20en%20llamas4.gif">
+		</div>
+			
+    	</div>
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-13">
+      
+		<h1 class="tituloPag12"> EVENTO</h1>
+        
+    	<a href=""></a>
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones22()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones21()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+			<img alt="" class="Animacion6"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/charla-sin-saltito.gif">	
+		
+		<div id="incendiodiv" style="display: none;">
+			
+			<img alt="" class="casa3"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Secuencia%2002_1.gif">
+		
+		</div>	
+		
+		<div id="accidentediv" style="display: none;">
+		
+			<img alt="" id="accidente3"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/estrellados%20mapo.gif">
+			
+		</div>	
+		
+			
+			
+    	</div>
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-14">
+      
+        <h1 id="tituloPag14"> CONSECUENCIA</h1>
+		
+    	<a href=""></a>
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones24()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones23()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		<div>
+			<img alt="" id="Animacion7"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/fuego-don-milton.gif">
+		</div>
+		
+		<div id="dañovehiculodiv" style="display: none;">
+			
+		<img alt="" id="Autodes"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Auto%20azul%20destruido-01.jpg">
+			
+		</div>	
+		
+		<div id="perdidatotaldiv" style="display: none;">
+			
+		<img alt="" id="Noauto"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/carro%20totalmente%20destruido_Mesa%20de%20trabajo%201.jpg">
+		
+		</div>	
+		
+		<div id="perdidaingresosdiv" style="display: none;">
+			
+		<img alt="" id="billetes"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/BILLETES%20VOLANDO%20PEQUE%C3%91O.gif">
+			
+		</div>		
+		
+		<div id="destrucciondiv" style="display: none;">
+		
+		<img alt="" id="fabrica"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/destruccion%20fabrica.gif">
+		
+			
+    	</div>
+	</div>
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-15">
+      
+        <h1 id="tituloPag15"> ACTIVIDAD</h1>
+	
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones26()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones25()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+			
+			<img alt="" id="Animacion8"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Don-Milton-Saludando.gif">
+		
+		<div id="actividad2" style="display: none;">
+		
+				<iframe height= "925"  width= "1820" src="https://es.educaplay.com/juego/15354463-caracteristicas_del_riesgo.html"></iframe>
+		
+		</div>
+	
+    	</div>
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+
+	<div class="slide-16">
+      	
+		
+        <h1 id="tituloPag16"> ACTITUDES FRENTE <br>AL RIESGO</h1>
+		
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones31()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones27()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+		<div id="señalando" style="display: block;">
+			
+				
+                <img alt="" id="Espejo"
+					 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Don-Milton-Saludando.gif">
+			
+            </div>
+		
+		<div id="pensativo" style="display: none;">
+			
+				
+                <img alt="" id="Espejo2"
+					 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Don-Milton-pensativo.gif">
+			
+            </div>
+		
+		<div id="desesperacion" style="display: block;">
+		
+		<img alt="" id="Actitudes"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/desesperacion.gif">
+			
+		</div>
+		
+		</div>
+	
+	<!--------------------------------------------------------------------------------------------------------------------------->
+		
+		<div class="slide-17">
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones28()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones32()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+		
+			<div id="actividad3" style="display: none;">
+		
+				<iframe  height= "925"  width= "1820" frameborder="0" src="https://es.educaplay.com/juego/15354837-que_debe_hacer_jorge_al_recibir_su_dinero.html"></iframe>
+			
+			</div>
+			
+    	</div>
+
+     <!--------------------------------------------------------------------------------------------------------------------------->
+		
+		<div class="slide-18">
+      
+        <h1 id="tituloPag17"> PRACTIQUEMOS UN POCO</h1>
+
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+        	<a type="button" value="siguiente" class="siguiente" onclick="ejecutaFunciones30()"><img alt="" class="siguienteImg"
+               	 src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/siguiente.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="ejecutaFunciones29()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+			
+			<div id="cabezarob" style="display: block;">
+				
+			<img alt="" id="cabezarobot"
+                    src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/cabezarobot2.gif">
+				
+			
+			</div>
+		
+			<div id="Quiz2" style="display: none;">
+			
+				<div style="width:100%;display:flex;flex-direction:column;gap:8px;min-height:927px;top:120px"><iframe src="https://quizizz.com/embed/quiz/6488d1fefd9919001d556f90" title="Practica tus conocimientos, sección 1 - Quizizz" style="flex:1;" frameBorder="0" allowfullscreen></iframe></div>
+			
+			</div>
+			
+    	</div>
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+	
+		<div class="slide-19">
+      
+        <h1 id="titulofinal"> FIN DE LA PRIMERA SECCIÓN</h1>
+		
+    	
+
+        	<a type="button" value="inicio" class="inicio" onclick="ejecutaFuncionesIn()"><img alt="" class="inicioImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/inicio.png"></a>
+
+        	<a type="button" value="anterior" class="anterior" onclick="playultimoaudio()"><img alt="" class="anteriorImg"
+                	src="https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/anterior.png"></a>
+    	</div>
+
+     <!---------------------------------------------------------------------------------------------------------------------------->
+	
+	
+		
+	
+	<script>
+        /**********************************************************************/
+
+        $("#btn").click(function () {
+            setTimeout(showTooltip, 500)
+        });
+
+        function showTooltip() {
+            $("#mensaje1").show("slow");
+            setTimeout(hideTooltip, 900000)
+        }
+
+        function hideTooltip() {
+            $("#mensaje1").hide("slow");
+        }
+        /* *******************************************************************/
+        $("#btn").click(function () {
+            setTimeout(showTooltip2, 3000)
+        });
+
+        function showTooltip2() {
+            $("#mensaje2").show("slow");
+
+            setTimeout(hideTooltip2, 900000)
+        }
+        function hideTooltip2() {
+            $("#mensaje2").hide("slow");
+        }
+        /**********************************************************************/
+        $("#btn").click(function () {
+            setTimeout(showTooltip3, 5000)
+        });
+
+        function showTooltip3() {
+            $("#mensaje3").show("slow");
+
+            setTimeout(hideTooltip3, 900000)
+        }
+        function hideTooltip3() {
+            $("#mensaje3").hide("slow");
+        }
+        /**********************************************************************/
+        $("#btn").click(function () {
+            setTimeout(showTooltip4, 6000)
+        });
+
+        function showTooltip4() {
+            $("#siguieteid").show("slow");
+
+            setTimeout(hideTooltip4, 900000)
+        }
+        function hideTooltip4() {
+            $("#siguieteid").hide("slow");
+        }
+
+        /**********************************************************************/
+        function ocultarTodo() {
+            slides = document.querySelectorAll("[class^=slide]")
+            slides.forEach(function (el) {
+                el.style.display = 'none';
+            })
+        }
+        ocultarTodo()
+        /**********************************************************************/
+        function mostrarUno(uno) {
+            let elementos = document.getElementsByClassName("slide-" + uno)[0].style.display = 'block';
+			
+		}
+        mostrarUno(0)
+        /***********************************************************************/
+        function siguiente() {
+            var slidesFn = document.querySelectorAll("[class^=slide]")
+            var actualElement = 0;
+            for (i = 0; i < slidesFn.length; i++) {
+                if (slidesFn[i].style.display == 'block') {
+                    actualElement = i;
+
+                }
+
+            }
+            if (actualElement == slidesFn.length - 1) {
+                alert("Has finalizado la presentacion")
+
+
+                return;
+
+            }
+
+            ocultarTodo()
+            mostrarUno(actualElement + 1)
+        }
+        /***********************************************************************/
+        function anterior() {
+            var slidesFn = document.querySelectorAll("[class^=slide]")
+            var actualElement = 0;
+            /*var anterior =document.querySelectorAll("[id ^= anterior]")*/
+            var enlace = document.querySelector("anterior");
+            for (i = 0; i < slidesFn.length; i++) {
+                if (slidesFn[i].style.display == 'block') {
+                    actualElement = i;
+                }
+            }
+            if (actualElement == 0) {
+                alert("NO hay elementos")
+                return; a
+            }
+            ocultarTodo()
+            mostrarUno(actualElement - 1)
+        }
+        /***********************************************************************/
+        function inicio() {
+            var slidesFn = document.querySelectorAll("[class^=slide]")
+            var actualElement = 0;
+            var enlace = document.querySelector("inicio");
+            for (i = 0; i < slidesFn.length; i++) {
+                if (slidesFn[i] != 0) {
+                    actualElement = 0;
+                }
+            }
+            ocultarTodo()
+            mostrarUno(actualElement = 0)
+        }
+        /******Tiempos******************************************************************/
+		
+		/******Riesgo******************************************************************/
+		
+        function gif1() {
+
+            setTimeout(function () {
+                document.getElementById("animaciodiv5").style.display = "none";
+            }, 3000);
+
+        }
+
+        function gif2() {
+            setTimeout(function () {
+                document.getElementById("animaciodiv2").style.display = "block";
+            }, 3000);
+
+            setTimeout(function () {
+                document.getElementById("animaciodiv2").style.display = "none";
+            }, 5000);
+
+        }
+		
+		
+        function gif3() {
+
+            setTimeout(function () {
+                document.getElementById("animaciodiv3").style.display = "block";
+            }, 5000);
+
+        }
+		
+		/******Caracteristicas del riesgo******************************************************************/
+		
+		function bloque1() {
+
+            setTimeout(function () {
+                document.getElementById("cuadrodiv1").style.display = "block";
+            }, 4500);
+
+        }
+		
+		function bloque2() {
+            setTimeout(function () {
+                document.getElementById("cuadrodiv2").style.display = "block";
+            }, 5500);
+
+        }
+		
+		function bloque3() {
+            setTimeout(function () {
+                document.getElementById("cuadrodiv3").style.display = "block";
+            }, 6500);
+
+        }
+		
+		function bloque4() {
+            setTimeout(function () {
+                document.getElementById("cuadrodiv4").style.display = "block";
+            }, 7500);
+
+        }
+        
+		/******al azar******************************************************************/
+		
+		function gif4() {
+
+            setTimeout(function () {
+                document.getElementById("Ansiedadgif").style.display = "none";				
+            }, 9000);
+			
+			}
+		
+		function texto2() {
+
+            setTimeout(function () {
+                document.getElementById("Parrafodiv2").style.display = "block";
+            }, 9000);
+
+        }
+		
+		/******concreto******************************************************************/
+		
+		function dimension() {
+
+            setTimeout(function () {
+                document.getElementById("Dimensiones").style.display = "block";
+            }, 5500);
+
+        }
+		
+		function cualitativa() {
+
+            setTimeout(function () {
+                document.getElementById("Cualitativa").style.display = "block";
+            }, 7500);
+
+        }
+		
+		function cuantitativa() {
+
+            setTimeout(function () {
+                document.getElementById("Cuantitativa").style.display = "block";
+            }, 8000);
+
+        }
+		
+		/********Ejemplos****************************************************************/
+		
+		function ejemplo1() {
+
+            setTimeout(function () {
+                document.getElementById("casadiv2").style.display = "block";
+            }, 2000);
+
+        }
+		
+		function ejemplo2() {
+
+            setTimeout(function () {
+                document.getElementById("accidentediv2").style.display = "block";
+            }, 6950);
+
+        }
+		
+		function ejemplo3() {
+
+            setTimeout(function () {
+                document.getElementById("muerteriesdiv").style.display = "block";
+            }, 4500);
+
+        }
+		
+		/********Actividad1****************************************************************/
+		
+		function aparecer() {
+
+            setTimeout(function () {
+                document.getElementById("actividad").style.display = "block";
+            }, 2000);
+
+        }
+		
+		/********Siniestro****************************************************************/
+		
+		function autoblue() {
+
+            setTimeout(function () {
+                document.getElementById("autoblue").style.display = "none";
+            }, 1450);
+
+        }
+		
+		function autored() {
+
+            setTimeout(function () {
+                document.getElementById("autored").style.display = "none";
+            }, 1450);
+
+        }
+		
+		function estrellados() {
+
+            setTimeout(function () {
+                document.getElementById("estrellados").style.display = "block";
+            }, 1500);
+
+        }
+		
+		/********Causa****************************************************************/
+		
+		function eje() {
+
+            setTimeout(function () {
+                document.getElementById("altave").style.display = "block";
+            }, 4550);
+
+        }
+		
+		function eje2() {
+
+            setTimeout(function () {
+                document.getElementById("fallafre").style.display = "block";
+            }, 7500);
+
+        }
+		
+		function eje3() {
+
+            setTimeout(function () {
+                document.getElementById("corto").style.display = "block";
+            }, 10300);
+
+        }
+		
+		/********Evento****************************************************************/
+		
+		function ej() {
+
+            setTimeout(function () {
+                document.getElementById("incendiodiv").style.display = "block";
+            }, 10000);
+
+        }
+		
+		function ej2() {
+
+            setTimeout(function () {
+                document.getElementById("accidentediv").style.display = "block";
+            }, 6850);
+
+        }
+		
+		/********Consecuencia****************************************************************/
+		
+		function ejem() {
+
+            setTimeout(function () {
+                document.getElementById("dañovehiculodiv").style.display = "block";
+            }, 6000);
+
+        }
+		
+		function ejem2() {
+
+            setTimeout(function () {
+                document.getElementById("perdidatotaldiv").style.display = "block";
+            }, 7500);
+
+        }
+		
+		function ejem3() {
+
+            setTimeout(function () {
+                document.getElementById("destrucciondiv").style.display = "block";
+            }, 9500);
+
+        }
+		
+		function ejem4() {
+
+            setTimeout(function () {
+                document.getElementById("perdidaingresosdiv").style.display = "block";
+            }, 12500);
+
+        }
+		
+		/********Actividad2****************************************************************/
+		
+		function aparecer2() {
+
+            setTimeout(function () {
+                document.getElementById("actividad2").style.display = "block";
+            }, 2000);
+
+        }
+		
+		/********actitudes****************************************************************/
+		
+		function desesperacion() {
+			
+            setTimeout(function () {
+                document.getElementById("desesperacion").style.display = "none";
+            }, 43000);
+
+        }
+		
+		function señalando() {
+			
+            setTimeout(function () {
+                document.getElementById("señalando").style.display = "none";
+            }, 43000);
+
+        }
+		
+		function pensativo(){
+			
+			setTimeout(function(){
+				document.getElementById("pensativo").style.display="block";				
+			},43000);
+			
+		}
+		
+		function activi(){
+			
+			setTimeout(function(){
+				document.getElementById("actividad3").style.display="block";				
+			},000);
+			
+		}
+		
+		/********Practiquemos****************************************************************/
+		
+		function cabezarob() {
+			
+            setTimeout(function () {
+                document.getElementById("cabezarob").style.display = "none";
+            }, 4000);
+
+        }
+			
+		function Quiz() {
+			
+            setTimeout(function () {
+                document.getElementById("Quiz2").style.display = "block";
+            }, 4000);
+
+        }
+		
+		/********cuadro de probable****************************************************************/
+		
+			
+		window.addEventListener('load', function() {
+  			var box = document.getElementById('box');
+  			box.style.animationFillMode = 'forwards'; // Establece la propiedad de animación para que se quede en el punto final
+		});
+		
+		/********cuadro de siniestro****************************************************************/
+		
+			
+		window.addEventListener('load', function() {
+  			var box = document.getElementById('box2');
+  			box.style.animationFillMode = 'forwards'; // Establece la propiedad de animación para que se quede en el punto final
+		});
+		
+		/*****AUDIO*******************************************************************/
+		
+		
+		var count = 0;
+		var pause = document.getElementsByClassName("siguiente");
+		var play = document.getElementsByClassName("siguiente");
+		
+		let audio = new Audio("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Riesgo.mp3");
+		
+		let audio2 =new Audio("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Caracterizticas del riesgo.mp3");
+		
+		let audio3 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/al azar completo.mp3")
+		
+		let audio4 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Concreto.mp3")
+		
+		let audio5 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Probable.mp3")
+		
+		let audio6 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Necesidades Economicas.mp3")
+		
+		let audio7 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Ejemplos de riesgo.mp3")
+		
+		let audio8 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Vamos a probar lo que aprendiste.mp3")
+		
+		let audio9 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Siniestro.mp3")
+		
+		let audio10 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Causa.mp3")
+		
+		let audio11 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Evento.mp3")
+		
+		let audio12 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Consecuencia_mezcla.mp3")
+		
+		let audio13 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Vamos a probar lo que aprendiste.mp3")
+		
+		let audio14 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/actitudes1_mezcla.mp3")
+		
+		let audio15 = new Audio ("https://inforcolbog.sharepoint.com/sites/Formacin/Documentos%20compartidos/DOCUMENTOS%20GENERALES/VIRTUALIZACI%C3%93N/Banco%20de%20im%C3%A1genes/Robotvoz.mp3")
+		
+		
+		function playMusic() {
+			audio.play();
+			audio.currentTime=0;
+			
+		}
+		
+		function playMusica() {
+			audio.play();
+			audio.currentTime=0;
+			
+		}
+		
+		play.addEventListener("click", playMusic);
+		
+		function para(){
+			
+			audio.pause();
+			audio.currentTime=0;
+			
+			
+		}
+		
+		pause.addEventListener("click", playMusic);
+		
+		function pararyco(){
+			
+			audio2.pause();
+			audio2.currentTime=0;
+			audio.play();
+			audio.currentTime=0;
+			
+		}
+		
+		play.addEventListener("click", pararyco);
+		pause.addEventListener("click", pararyco);
+		
+		function pararycontinuar(){
+			
+			playMusic()
+			audio.pause();
+			audio.currentTime=0;
+			audio2.play();
+			audio2.currentTime=0;
+			
+		}
+		
+		function pararyco2(){
+			
+			audio3.pause();
+			audio.currentTime=0;
+			audio2.play();
+			audio2.currentTime=0;
+			
+		}
+		
+		
+		pause.addEventListener("click", pararyco2);
+		
+		function pararycontinuar2(){
+			
+			audio2.pause();
+			audio2.currentTime=0;
+			audio3.play();
+			audio3.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar2);
+		
+		function pararycontinuar3(){
+			
+			audio3.pause();
+			audio3.currentTime=0;
+			audio4.play();
+			audio4.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar3);
+		
+		function pararyco3(){
+			
+			audio4.pause();
+			audio4.currentTime=0;
+			audio3.play();
+			audio3.currentTime=0;
+			
+		}
+		
+		
+		pause.addEventListener("click", pararyco3);
+		
+		function pararycontinuar4(){
+			
+			audio4.pause();
+			audio4.currentTime=0;
+			audio5.play();
+			audio5.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar4);
+		
+		function pararyco4(){
+			
+			audio5.pause();
+			audio5.currentTime=0;
+			audio4.play();
+			audio4.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco4);
+		
+		function pararycontinuar5(){
+			
+			audio5.pause();
+			audio5.currentTime=0;
+			audio6.play();
+			audio6.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar5);
+		
+		function pararyco5(){
+			
+			audio6.pause();
+			audio6.currentTime=0;
+			audio5.play();
+			audio5.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco5);
+		
+		function pararycontinuar6(){
+			
+			audio6.pause();
+			audio6.currentTime=0;
+			audio7.play();
+			audio7.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar6);
+		
+		function pararyco6(){
+			
+			audio7.pause();
+			audio7.currentTime=0;
+			audio6.play();
+			audio6.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco7);
+		
+		function pararycontinuar7(){
+			
+			audio7.pause();
+			audio7.currentTime=0;
+			audio8.play();
+			audio8.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar7);
+		
+		function pararyco7(){
+			
+			audio8.pause();
+			audio8.currentTime=0;
+			audio7.play();
+			audio7.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco7);
+		
+		function pararycontinuar8(){
+			
+			audio8.pause();
+			audio8.currentTime=0;
+			audio9.play();
+			audio9.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar8);
+		
+		function pararyco8(){
+			
+			audio9.pause();
+			audio9.currentTime=0;
+			audio8.play();
+			audio8.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco8);
+		
+		function pararycontinuar9(){
+			
+			audio9.pause();
+			audio9.currentTime=0;
+			audio10.play();
+			audio10.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar9);
+		
+		function pararyco9(){
+			
+			audio10.pause();
+			audio10.currentTime=0;
+			audio9.play();
+			audio9.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco9);
+		
+		function pararycontinuar10(){
+			
+			audio10.pause();
+			audio10.currentTime=0;
+			audio11.play();
+			audio11.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar10);
+		
+		function pararyco10(){
+			
+			audio11.pause();
+			audio11.currentTime=0;
+			audio10.play();
+			audio10.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco10);
+		
+		function pararycontinuar11(){
+			
+			audio11.pause();
+			audio11.currentTime=0;
+			audio12.play();
+			audio12.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar11);
+		
+		function pararyco11(){
+			
+			audio12.pause();
+			audio12.currentTime=0;
+			audio11.play();
+			audio11.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco11);
+		
+		function pararycontinuar12(){
+			
+			audio12.pause();
+			audio12.currentTime=0;
+			audio13.play();
+			audio13.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar12);
+		
+		function pararyco12(){
+			
+			audio13.currentTime=0;
+			audio13.pause();
+			audio12.play();
+			audio12.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco12);
+		
+		function pararycontinuar13(){
+			
+			audio13.pause();
+			audio13.currentTime=0;
+			audio14.play();
+			audio14.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar13);
+		
+		function pararyco13(){
+			
+			audio14.pause();
+			audio14.currentTime=0;
+			audio13.play();
+			audio13.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco13);
+		
+		
+		function pararycontinuar14(){
+			
+			audio14.pause();
+			audio14.currentTime=0;
+			audio15.play();
+			audio15.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararycontinuar14);
+		
+		function pararyco14(){
+			audio14.play();
+			audio14.currentTime=0;
+			
+		}
+		
+		pause.addEventListener("click", pararyco14);
+		
+		
+		
+		function pararaudio(){
+			
+			audio14.pause();
+			audio14.currentTime=0;
+			audio15.pause();
+			audio15.currentTime=0;
+			
+		}
+		
+		function playultimoaudio(){
+			
+			audio15.play();
+			audio15.currentTime=0;
+			anterior();
+		}
+		
+		
+		
+		
+		/*****Funciones de botones*******************************************************************/
+		 
+		/****Boton de inicio******************************************************************/
+		
+		function detenerTodo() {
+            audio.pause();
+			audio.currentTime=0;
+			audio2.pause();
+			audio2.currentTime=0;
+			audio3.pause();
+			audio3.currentTime=0;
+			audio4.pause();
+			audio4.currentTime=0;
+			audio5.pause();
+			audio5.currentTime=0;
+			audio6.pause();
+			audio6.currentTime=0;
+			audio7.pause();
+			audio7.currentTime=0;
+			audio8.pause();
+			audio8.currentTime=0;
+			audio9.pause();
+			audio9.currentTime=0;
+			audio10.pause();
+			audio10.currentTime=0;
+			audio11.pause();
+			audio11.currentTime=0;
+			audio12.pause();
+			audio12.currentTime=0;
+			audio13.pause();
+			audio13.currentTime=0;
+			audio14.pause();
+			audio14.currentTime=0;
+			audio15.pause();
+			audio15.currentTime=0;
+			}
+		
+		/****Boton de inicio ejecutar******************************************************************/
+		
+		function ejecutaFuncionesIn() {
+			
+            inicio();
+			detenerTodo();
+           	
+        }
+		
+		/****Boton siguiente antes de riesgo*******************************************************************/
+		
+		function ejecutaFunciones() {
+			
+			
+            gif1();
+            gif2();
+            gif3();
+			playMusic();
+            siguiente();
+			
+        }
+		
+		/****Boton anterior en riesgo*******************************************************************/
+		
+		function ejecutaFuncionesant() {
+            
+			anterior();
+			para();
+			
+			}
+		
+		/*****Boton siguiente antes de caracterizticas de riesgo*******************************************************************/
+		
+		function ejecutaFunciones2() {
+			
+			bloque1();
+			bloque2();
+			bloque3();
+			bloque4();
+			pararycontinuar();
+            siguiente();
+			playNextaudio()
+		}
+		
+		/*****Boton de anterior en caracteristicas del texto*******************************************************************/
+		
+		function ejecutaFunciones3() {
+			
+			pararyco();
+            anterior();
+		}
+		
+		/*****boton de siguiente antes de al azar*******************************************************************/
+		
+		function ejecutaFunciones4() {
+			pararycontinuar2();
+			gif4();
+			texto2();
+            siguiente();
+		}
+		
+		/*****Boton anterior en al azar*******************************************************************/
+		
+		function ejecutaFunciones5() {
+			
+			pararyco2();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de concreto*******************************************************************/
+		
+		function ejecutaFunciones6() {
+			
+			dimension();
+			cualitativa();
+			cuantitativa();
+			pararycontinuar3();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en concreto*******************************************************************/
+		
+		function ejecutaFunciones7() {
+			
+			pararyco3();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de probable*******************************************************************/
+		
+		function ejecutaFunciones8() {
+			
+			pararycontinuar4();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en probable*******************************************************************/
+		
+		function ejecutaFunciones9() {
+			
+			pararyco4();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de necesidades economicas*******************************************/
+		
+		function ejecutaFunciones10() {
+			
+			pararycontinuar5();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en necesidades economicas*******************************************************************/
+		
+		function ejecutaFunciones11(){	 		
+			pararyco5();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de ejemplos*******************************************/
+		
+		function ejecutaFunciones12() {
+			
+			ejemplo1();
+			ejemplo2();
+			ejemplo3();
+			pararycontinuar6();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en ejemplos*******************************************************************/
+		
+		function ejecutaFunciones13(){	 		
+			pararyco6();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de actividad*******************************************/
+		
+		function ejecutaFunciones14() {
+			
+			aparecer();
+			pararycontinuar7();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en actividad*******************************************************************/
+		
+		function ejecutaFunciones15(){	 		
+			pararyco7();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de siniestro*******************************************/
+		
+		function ejecutaFunciones16() {
+			
+			pararycontinuar8();
+			autoblue();
+			autored();
+			estrellados();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en siniestro*******************************************************************/
+		
+		function ejecutaFunciones17(){
+			
+			aparecer();
+			pararyco8();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de causa*******************************************/
+		
+		function ejecutaFunciones18() {
+			
+			eje();
+			eje2();
+			eje3();
+			pararycontinuar9();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en causa*******************************************************************/
+		
+		function ejecutaFunciones19(){	 		
+			pararyco9();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de evento*******************************************/
+		
+		function ejecutaFunciones20() {
+			
+			ej();
+			ej2();
+			pararycontinuar10();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en evento*******************************************************************/
+		
+		function ejecutaFunciones21(){	 		
+			pararyco10();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de consecuencia*******************************************/
+		
+		function ejecutaFunciones22() {
+			
+			ejem();
+			ejem2();
+			ejem3();
+			ejem4();
+			pararycontinuar11();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en consecuencia*******************************************************************/
+		
+		function ejecutaFunciones23(){	 		
+			pararyco11();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de actividad*******************************************/
+		
+		function ejecutaFunciones24() {
+			
+			aparecer2();
+			pararycontinuar12();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en actividad*******************************************************************/
+		
+		function ejecutaFunciones25(){	 		
+			pararyco12();
+            anterior();
+		}
+		
+		/*****Boton de siguiente antes de actitudes*******************************************/
+		
+		function ejecutaFunciones26() {
+			
+			pararycontinuar13();
+			activi();
+			desesperacion();
+			señalando();
+			pensativo();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en actitudes*******************************************************************/
+		
+		function ejecutaFunciones27(){
+			
+			aparecer2();
+			pararyco13();
+            anterior();
+		}
+		
+			
+		/*****Boton de siguiente antes de practiquemos*******************************************/
+		
+		function ejecutaFunciones28() {
+			
+			pararycontinuar14();
+			cabezarob();
+			Quiz();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en practiquemos*******************************************************************/
+		
+		function ejecutaFunciones29(){	 		
+			pararaudio();
+            anterior();
+		}
+		
+		/*****Boton siguiente en practiquemos*******************************************************************/
+		
+		function ejecutaFunciones30(){	 		
+			pararaudio();
+            siguiente();
+		}
+		
+		/*****Boton de siguiente antes de actividad ultima*******************************************/
+		
+		function ejecutaFunciones31() {
+			
+			activi();
+		    pararaudio();
+			siguiente();
+			
+			 }
+		
+		/*****Boton anterior en actividad ultima*******************************************************************/
+		
+		function ejecutaFunciones32(){	 		
+			pararyco14();
+            anterior();
+		}
+		
+			
+		
+		
+		/*****AUDIO2*******************************************************************/
+		
+		var count = 0;
+		var pause = document.getElementsByClassName("siguiente");
+		var play = document.getElementsByClassName("siguiente");
+		
+		
+		
+	
+		
+		
+    </script>
+		
+</body>
+
+</html>
